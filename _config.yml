@@ -5,9 +5,9 @@
 # Site
 title: '很菜的菜菜'
 subtitle: 'i''m so vegetable'
-description: '我菜死了'
+description: 'bakacai'
 keywords:
-author: bakacai
+author: 很菜的菜菜
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -103,3 +103,42 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Markdown-it config
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
+
+# Search config
+search:
+  path: search.xml
+  field: all
+  content: true
+
+# RSS config
+feed:
+  enable: true
+  type: rss2
+  path: rss2.xml
+  limit: 0
+  hub:
+  content:
+  content_limit: 200
+  content_limit_delim: ' '
+  order_by: -date
+  icon: images/logo.jpg
+  autodiscovery: true
+
+# nofollow config
+nofollow:
+  enable: true
+  field: site
+
+# Sitemap config
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  rel: false
+  tags: true
+  categories: true

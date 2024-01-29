@@ -14,7 +14,8 @@
 
 1. 参考[hexo官网提供的教程](https://hexo.io/zh-cn/docs/index.html)安装 `git` 、 `nodejs` 、 `hexo`
 
-2. 克隆(clone)该仓库到本地 **注意该项目使用了 gitmodules 的形式来加载[我自行修改过的主题](https://github.com/bakacai/hexo-theme-butterfly-mod)，所以clone时请加入 `--recurse-submodules` 参数，否则 `themes/butterfly` 将为空文件夹，后续 hexo 编译操作无法完成**
+2. 克隆(clone)该仓库到本地 **注意该项目使用了 submodules 的形式来加载[我自行修改过的主题](https://github.com/bakacai/hexo-theme-butterfly-mod)，所以clone时请加入 `--recurse-submodules` 参数，否则 `themes/butterfly` 将为空文件夹，后续 hexo 编译操作无法完成**
+    >如果忘记添加该参数，可以使用 `git submodule update --init --recursive` 来初始化子模块
 
 3. 进入项目目录，使用 `pnpm install` 完成 node_modules 的安装
 
@@ -28,5 +29,5 @@
 
 该仓库中位于 `source/_posts` 的文件除特别声明外，均采用 [CC BY-NC-ND 4.0 DEED](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans) （创意共享4.0许可证：自由转载-非商用-非衍生-转载请注明出处）协议进行分享。除此路径外的其余文件均采用[Apache 2.0许可证](https://opensource.org/licenses/Apache-2.0)进行授权。
 
-基于该开源协议的影响，您可以自行修改除 `source/_posts` 外的所有代码（该目录中的文件只能选择删除或标记来源自**很菜的菜菜**，且不能随意修改其内容，不能用于商业用途，**当该目录下的文件均被删除后，该仓库便只受Apache 2.0协议的限制**）
+基于该开源协议的影响，您可以自行修改除 `source/_posts` 外的所有代码（该目录中的文件只能选择删除，或标记文件内容来源自**很菜的菜菜**，且不能随意修改其内容，不能用于商业用途，**当该目录下的文件均被删除后，该仓库便只受Apache 2.0协议的限制**）
 
