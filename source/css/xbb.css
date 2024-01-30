@@ -1,0 +1,224 @@
+/*加载样式*/
+.qexo_inner,
+.qexo_loader {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.qexo_loading {
+    min-height: 200px;
+}
+
+.qexo_part {
+    min-height: 100px;
+}
+
+.qexo_loader {
+    background-color: #90939920;
+    width: 64px;
+    height: 64px;
+    perspective: 800px;
+}
+
+.qexo_inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.qexo_inner.one {
+    left: 0;
+    top: 0;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #888;
+    position: absolute;
+}
+
+.qexo_inner.two {
+    right: 0;
+    top: 0;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #888;
+    position: absolute;
+}
+
+.qexo_inner.three {
+    right: 0;
+    bottom: 0;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #888;
+    position: absolute;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0);
+    }
+
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0);
+    }
+
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/* 每条动态 */
+#qexot > section > div > div > div {
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+#qexot > section > div > div {
+    box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.07) !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#qexot p {
+    margin: 0;
+}
+
+/* 标签 */
+#qexot > section > div > div > div .qexot-tags {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: oblique;
+    color: #eeadc3;
+    display: flex;
+    margin: auto 0 auto auto;
+}
+
+.qexot-tag {
+    background-color: #eeadc347;
+    border-radius: 0.4em;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+}
+
+/* 内容 */
+#qexot > section > div > div > div .datacont {
+    order: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    line-height: 1.38;
+    margin: 8px 0;
+}
+
+#qexot .qexot-like {
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: xx-small;
+    fill: currentColor;
+    color: #909090
+}
+
+#qexot .qexot-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#qexot .qexot-top {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.qexot-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 !important;
+}
+
+.qexot-info {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.qexot-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.qexot-timedate {
+    font-size: 12px;
+    color: #909399;
+    line-height: 1.2;
+}
+
+#qexot div.qexot-content {
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    width: 100%;
+}
+
+#qexot .qexot div div.qexot-item {
+    width: 100%;
+    border-radius: 12px;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.qexot-heart {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.qexot-heart-liked {
+    color: #ff8c8c;
+}
+
+.qexot-heart-like {
+    color: #909090;
+}
+
+.qexot-more {
+    border-width: 1px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: -1px 5px 10px 0 rgba(50, 50, 93, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.07) !important;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    padding-bottom: calc(0.375em - 1px);
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    width: 20%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
