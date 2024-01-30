@@ -15,40 +15,14 @@
     <atom:link href="https://bakacai.cc/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>bakacai</description>
-    <pubDate>Tue, 30 Jan 2024 13:39:36 GMT</pubDate>
+    <pubDate>Tue, 30 Jan 2024 13:44:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>Code Test</title>
-      <link>https://bakacai.cc/uncategorized/code-test/</link>
-      <guid>https://bakacai.cc/uncategorized/code-test/</guid>
-      <pubDate>Tue, 30 Jan 2024 13:39:36 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;测试&quot;&gt;测试&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/arms-aris.png&quot; alt=&quot;这是爱丽丝的武器&quot;&gt;&lt;br&gt;
-&lt;img src=&quot;/images/arms-aris.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>https://bakacai.cc/uncategorized/code-test/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>Hello World</title>
       <link>https://bakacai.cc/uncategorized/hello-world/</link>
       <guid>https://bakacai.cc/uncategorized/hello-world/</guid>
-      <pubDate>Tue, 30 Jan 2024 13:39:36 GMT</pubDate>
+      <pubDate>Tue, 30 Jan 2024 13:44:41 GMT</pubDate>
       
         
         
