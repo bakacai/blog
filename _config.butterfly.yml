@@ -403,7 +403,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: waline
+  use: Twikoo
   text: false
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -454,7 +454,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://waline.bakacai.cc
+  serverURL:
   bg: # waline background
   pageview: true
   option:
@@ -485,9 +485,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://tk.bakacai.cc
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
